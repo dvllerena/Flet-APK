@@ -1,0 +1,20 @@
+2025-07-08 13:23:32 | INFO     | perdidas_app:setup_logger:68 - === Sistema de logging DESKTOP inicializado ===
+2025-07-08 13:23:32 | INFO     | perdidas_app:main:30 - === Iniciando Aplicación Híbrida de Pérdidas Matanzas - DESKTOP ===
+2025-07-08 13:23:32 | INFO     | perdidas_app:log_system_info:295 - Plataforma: Windows 10
+2025-07-08 13:23:32 | INFO     | perdidas_app:log_system_info:296 - Python: 3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)]
+2025-07-08 13:23:32 | INFO     | perdidas_app:log_system_info:297 - Modo de ejecución: DESKTOP
+2025-07-08 13:26:22 | INFO     | perdidas_app:setup_logger:68 - === Sistema de logging DESKTOP inicializado ===
+2025-07-08 13:26:22 | INFO     | perdidas_app:main:30 - === Iniciando Aplicación Híbrida de Pérdidas Matanzas - DESKTOP ===
+2025-07-08 13:26:22 | INFO     | perdidas_app:log_system_info:295 - Plataforma: Windows 10
+2025-07-08 13:26:22 | INFO     | perdidas_app:log_system_info:296 - Python: 3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)]
+2025-07-08 13:26:22 | INFO     | perdidas_app:log_system_info:297 - Modo de ejecución: DESKTOP
+2025-07-08 13:26:22 | INFO     | perdidas_app:main:35 - Configuraciones desktop cargadas correctamente
+2025-07-08 13:26:22 | INFO     | perdidas_app:main:50 - Configurando para modo DESKTOP
+2025-07-08 13:27:57 | INFO     | perdidas_app:setup_logger:68 - === Sistema de logging DESKTOP inicializado ===
+2025-07-08 13:27:57 | INFO     | perdidas_app:main:30 - === Iniciando Aplicación Híbrida de Pérdidas Matanzas - DESKTOP ===
+2025-07-08 13:27:57 | INFO     | perdidas_app:log_system_info:295 - Plataforma: Windows 10
+2025-07-08 13:27:57 | INFO     | perdidas_app:log_system_info:296 - Python: 3.12.1 (tags/v3.12.1:2305ca5, Dec  7 2023, 22:03:25) [MSC v.1937 64 bit (AMD64)]
+2025-07-08 13:27:57 | INFO     | perdidas_app:log_system_info:297 - Modo de ejecución: DESKTOP
+2025-07-08 13:27:57 | INFO     | perdidas_app:main:35 - Configuraciones desktop cargadas correctamente
+2025-07-08 13:27:57 | INFO     | perdidas_app:main:50 - Configurando para modo DESKTOP
+2025-07-08 13:27:57 | INFO     | perdidas_app:main:61 - Ventana configurada: 420.0x620.0

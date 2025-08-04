@@ -1,0 +1,59 @@
+name: perdidas-matanzas
+description: Análisis de Pérdidas Eléctricas - Matanzas
+version: 1.0.0
+author: Denny Villerena
+author_email: dvllerena41@gmail.com
+
+# Configuración para múltiples plataformas
+flutter:
+  permissions:
+    - INTERNET
+    - android.permission.WRITE_EXTERNAL_STORAGE
+    - android.permission.READ_EXTERNAL_STORAGE
+    - android.permission.MANAGE_EXTERNAL_STORAGE
+
+# Configuración Android (mantenida para compatibilidad)
+android:
+  package: com.une.perdidas.matanzas
+  adaptive_icon_background: "#2196F3"
+  min_sdk_version: 21
+  target_sdk_version: 34
+  compile_sdk_version: 34
+  ndk_version: "25.2.9519653"
+  build_tools_version: "34.0.0"
+
+# NUEVA: Configuración Web
+web:
+  route_url_strategy: "path"
+  use_color_emoji: true
+  renderer: "html"
+  
+# Configuración de build
+build:
+  output_directory: build
+  include_packages:
+    - flet
+    - pydantic
+    - python-dotenv
+  
+  # Assets para web
+  assets:
+    - assets/
+    - assets/images/
+    - assets/fonts/
+    - assets/themes/
+
+# Configuración específica para web build
+web_build:
+  base_href: "/"
+  web_renderer: "html"
+  source_maps: false
+  tree_shake_icons: true
+  
+# Metadatos para web
+metadata:
+  title: "Pérdidas Eléctricas - Matanzas"
+  description: "Sistema de análisis de pérdidas eléctricas para la provincia de Matanzas"
+  keywords: "perdidas,electricas,matanzas,une,cuba"
+  theme_color: "#2196F3"
+  background_color: "#FFFFFF"

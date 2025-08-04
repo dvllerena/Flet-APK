@@ -1,0 +1,24 @@
+{
+  "name": "Pérdidas Eléctricas - Matanzas",
+  "short_name": "Pérdidas Matanzas",
+  "description": "Sistema de análisis de pérdidas eléctricas para la provincia de Matanzas",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#2196F3",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["utilities", "productivity"],
+  "lang": "es-ES"
+}

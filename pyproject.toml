@@ -1,0 +1,20 @@
+[build-system]
+requires = ["flet"]
+
+[project]
+name = "perdidas-matanzas-web"
+version = "1.0.0"
+description = "Aplicación Web de Análisis de Pérdidas Eléctricas - Matanzas"
+authors = [
+    {name = "Denny", email = "dvllerena41@gmail.com"}
+]
+dependencies = [
+    "flet>=0.28.3",
+    "python-dotenv>=1.0.0"
+]
+
+[tool.flet]
+module-name = "main"
+
+[tool.flet.web]
+base_url = "/"
