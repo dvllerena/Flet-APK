@@ -15,7 +15,7 @@ workflows:
           python3 -m pip install flet==$FLET_VERSION
       - name: Construir APK
         script: |
-          flet build apk --build-version 1.0.0 --app-name "MiAppFlet"
+          flet build apk
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
     publishing:
