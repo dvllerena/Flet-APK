@@ -1,0 +1,24 @@
+workflows:
+  android-workflow:
+    name: Build Android APK
+    environment:
+      groups:
+        - keystore  # Opcional (para firmar el APK)
+      vars:
+        FLET_VERSION: "0.18.0"
+    scripts:
+      - name: Instalar dependencias
+        script: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pip openjdk-11-jdk
+          python3 -m pip install --upgrade pip
+          python3 -m pip install flet==$FLET_VERSION
+      - name: Construir APK
+        script: |
+          flet build apk --build-version 1.0.0 --app-name "MiAppFlet"
+    artifacts:
+      - build/app/outputs/flutter-apk/app-release.apk
+    publishing:
+      email:
+        recipients:
+          - dvllerena41@gmail.com # Cambia esto
