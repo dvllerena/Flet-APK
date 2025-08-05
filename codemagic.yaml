@@ -24,10 +24,7 @@ workflows:
         script: |
           flet clean
           flet pack main.py --name MiAppFlet
-          flet build apk --build-version 1.0.0 --keystore ~/.keystore/release.jks \
-            --keystore-password $CM_KEYSTORE_PASSWORD \
-            --keystore-key-alias $CM_KEY_ALIAS \
-            --key-password $CM_KEY_PASSWORD
+          flet build apk --build-version 1.0.0 
     artifacts:
       - build/app/outputs/flutter-apk/*.apk
       - build/apk/*.apk
