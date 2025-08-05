@@ -20,10 +20,7 @@ workflows:
           sudo apt-get install -y python3-pip openjdk-17-jdk
           python3 -m pip install --upgrade pip
           python3 -m pip install flet==$FLET_VERSION
-      - name: Prepare keystore for signing
-        script: |
-          mkdir -p ~/.keystore
-          cp $CM_KEYSTORE ~/.keystore/release.jks
+   
       - name: Build APK
         script: |
           flet clean
