@@ -20,12 +20,6 @@ workflows:
           sudo apt-get install -y python3-pip openjdk-17-jdk
           python3 -m pip install --upgrade pip
           python3 -m pip install flet==$FLET_VERSION
-      - name: Prepare keystore for signing
-        script: |
-          mkdir -p ~/.keystore
-          # Copia el keystore desde la ruta proporcionada por Codemagic
-          # y lo renombra a 'release.jks' para que flet lo encuentre.
-          cp "$CM_KEYSTORE_PATH" ~/.keystore/release.jks
       - name: Build APK
         script: |
           flet clean
