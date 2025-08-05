@@ -21,8 +21,12 @@ workflows:
           python3 -m pip install flet==$FLET_VERSION
       - name: Build APK
         script: |
+<<<<<<< HEAD
           flet clean  # Clean previous builds
           flet pack main.py --name MiAppFlet
           flet build apk --build-version 1.0.0
+=======
+          flet build apk
+>>>>>>> 0ce8aab155970d81959fad5e8a820f622d5139b6
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
