@@ -25,4 +25,9 @@ workflows:
           flet pack main.py --name MiAppFlet
           flet build apk --build-version 1.0.0
     artifacts:
-      - build/app/outputs/flutter-apk/*.apk
+      - build/app/outputs/flutter-apk/*.apk  # Ruta estándar
+      - build/apk/*.apk                      # Ruta alternativa
+    publishing:
+      scripts:
+        - name: Listar archivos generados
+          script: ls -R build/
