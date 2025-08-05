@@ -3,10 +3,11 @@ workflows:
     name: Build Android APK
     environment:
       groups:
-        - keystore
+        - keystore  # Este grupo debe incluir las variables:
+                    # CM_KEYSTORE, CM_KEYSTORE_PASSWORD, CM_KEY_ALIAS, CM_KEY_PASSWORD
       vars:
-        FLET_VERSION: "0.28.3"  # Using latest stable Flet
-        FLUTTER_VERSION: "3.22.0"  # Specify Flutter version
+        FLET_VERSION: "0.28.3"
+        FLUTTER_VERSION: "3.22.0"
     scripts:
       - name: Setup Flutter
         script: |
@@ -16,17 +17,24 @@ workflows:
       - name: Install dependencies
         script: |
           sudo apt-get update
-          sudo apt-get install -y python3-pip openjdk-17-jdk  # Updated JDK
+          sudo apt-get install -y python3-pip openjdk-17-jdk
           python3 -m pip install --upgrade pip
           python3 -m pip install flet==$FLET_VERSION
+      - name: Prepare keystore for signing
+        script: |
+          mkdir -p ~/.keystore
+          cp $CM_KEYSTORE ~/.keystore/release.jks
       - name: Build APK
         script: |
-          flet clean  # Clean previous builds
+          flet clean
           flet pack main.py --name MiAppFlet
-          flet build apk --build-version 1.0.0
+          flet build apk --build-version 1.0.0 --keystore ~/.keystore/release.jks \
+            --keystore-password $CM_KEYSTORE_PASSWORD \
+            --keystore-key-alias $CM_KEY_ALIAS \
+            --key-password $CM_KEY_PASSWORD
     artifacts:
-      - build/app/outputs/flutter-apk/*.apk  # Ruta estándar
-      - build/apk/*.apk                      # Ruta alternativa
+      - build/app/outputs/flutter-apk/*.apk
+      - build/apk/*.apk
     publishing:
       scripts:
         - name: Listar archivos generados

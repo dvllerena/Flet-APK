@@ -1,0 +1,275 @@
+{
+  "empresa": "DIRECTORIO TELEFÓNICO EE MATANZAS",
+  "pizarra": "45245033",
+  "areas": [
+    {
+      "nombre": "Dirección General",
+      "extensiones": [
+        {"extension": "28601", "cargo": "Director General"},
+        {"extension": "28602", "cargo": "Secretaria del Director"},
+        {"extension": "28630", "cargo": "Jurídico"},
+        {"extension": "28603", "cargo": "Jefa Despacho del Director"},
+        {"extension": "28710", "cargo": "Call Center"},
+        {"extension": "28672", "cargo": "Centro de Control"},
+        {"extension": "28729", "cargo": "Salón Audioconferencias"}
+      ]
+    },
+    {
+      "nombre": "Direccion Organización y Sistemas",
+      "extensiones": [
+        {"extension": "28632", "cargo": "Directora"},
+        {"extension": "28609", "cargo": "Calidad y Medio Ambiente"},
+        {"extension": "28728", "cargo": "Area de Auditores"}
+      ]
+    },
+    {
+      "nombre": "UEB COEV",
+      "extensiones": [
+        {"extension": "28671", "cargo": "Director COEV Matanzas"},
+        {"extension": "28930", "cargo": "Operaciones COEV"},
+        {"extension": "28936", "cargo": "Operaciones . Subestaciones"},
+        {"extension": "28940", "cargo": "Area de la Dirección COEV"},
+        {"extension": "28942", "cargo": "Taller de Transformadores"},
+        {"extension": "28929", "cargo": "Taller de Protecciones"},
+        {"extension": "28927", "cargo": "Taller de Mediciones"}
+      ]
+    },
+    {
+      "nombre": "Dirección Técnica",
+      "extensiones": [
+        {"extension": "28689", "cargo": "Director Técnico"},
+        {"extension": "28694", "cargo": "Ingeniería Distribución"},
+        {"extension": "28660", "cargo": "Área Técnica"},
+        {"extension": "28611", "cargo": "Sec Director Técnico"}
+      ]
+    },
+    {
+      "nombre": "Dirección Comercial",
+      "extensiones": [
+        {"extension": "28724", "cargo": "Director Comercial"},
+        {"extension": "28624", "cargo": "Area Comercial"},
+        {"extension": "28784", "cargo": "Area Comercial"}
+      ]
+    },
+    {
+      "nombre": "Direccion de Economía",
+      "extensiones": [
+        {"extension": "28790", "cargo": "Director Económico"},
+        {"extension": "28617", "cargo": "Tesorería"},
+        {"extension": "28628", "cargo": "Contabilidad"},
+        {"extension": "28629", "cargo": "Planificación"},
+        {"extension": "28735", "cargo": "Area Economía"}
+      ]
+    },
+    {
+      "nombre": "Dirección de Recursos Humanos",
+      "extensiones": [
+        {"extension": "28607", "cargo": "Director Recursos Humanos"},
+        {"extension": "28627", "cargo": "Capacitación"},
+        {"extension": "28684", "cargo": "Seguridad Laboral"},
+        {"extension": "28711", "cargo": "Psicología"},
+        {"extension": "28731", "cargo": "Cuadros"},
+        {"extension": "28732", "cargo": "Sindicato"},
+        {"extension": "28734", "cargo": "Jefe Cuadros"},
+        {"extension": "28652", "cargo": "RRHH 1"},
+        {"extension": "28649", "cargo": "OTS"}
+      ]
+    },
+    {
+      "nombre": "UEB Seguridad y Protección",
+      "extensiones": [
+        {"extension": "28620", "cargo": "Director UEB Seguridad"},
+        {"extension": "28625", "cargo": "Seguridad Informática"},
+        {"extension": "28600", "cargo": "Operadora"},
+        {"extension": "28608", "cargo": "Recepción Oficina Central"},
+        {"extension": "28948", "cargo": "Garita de la Sub planta"}
+      ]
+    },
+    {
+      "nombre": "UEB Despacho",
+      "extensiones": [
+        {"extension": "28714", "cargo": "Jefe Despacho Territorial"},
+        {"extension": "28615", "cargo": "Despachador Jefe de Turno"},
+        {"extension": "28613", "cargo": "Despachador Transmisión"},
+        {"extension": "28618", "cargo": "Implementador"},
+        {"extension": "28644", "cargo": "Técnico Distribución Matanzas"},
+        {"extension": "28659", "cargo": "Regímenes 1"},
+        {"extension": "28713", "cargo": "Despacho de Distribución Matanzas"},
+        {"extension": "28612", "cargo": "Despacho. Lectura"},
+        {"extension": "28715", "cargo": "Despacho de Distribución Varadero"},
+        {"extension": "28716", "cargo": "Despacho de Distribución Colón"},
+        {"extension": "28717", "cargo": "Despacho de Distribución Jovellanos"},
+        {"extension": "28776", "cargo": "Analista Despacho Provincial"},
+        {"extension": "28777", "cargo": "Jefe Sección Operativa del Despacho"},
+        {"extension": "28778", "cargo": "Regímenes 2"},
+        {"extension": "28779", "cargo": "Jefe Despacho de Distribucion"},
+        {"extension": "28690", "cargo": "Despachador. Generación"},
+        {"extension": "28614", "cargo": "Quejas"},
+        {"extension": "28643", "cargo": "Secretaría del Despacho"},
+        {"extension": "28648", "cargo": "Regímenes 3"},
+        {"extension": "28706", "cargo": "Analista"}
+      ]
+    },
+    {
+      "nombre": "UEB Informática y Comunicaciones",
+      "extensiones": [
+        {"extension": "28619", "cargo": "Director Informática y Comunicaciones"},
+        {"extension": "28639", "cargo": "Comunicaciones.Radio enlaces"},
+        {"extension": "28739", "cargo": "Comunicaciones"},
+        {"extension": "28700", "cargo": "Quejas I&C"},
+        {"extension": "28720", "cargo": "Local de Servidores"},
+        {"extension": "28769", "cargo": "Jefe de Automática"}
+      ]
+    },
+    {
+      "nombre": "UEB Servicios Comerciales",
+      "extensiones": [
+        {"extension": "28770", "cargo": "Director de Servicios Comerciales"},
+        {"extension": "28931", "cargo": "Taller de Metro"}
+      ]
+    },
+    {
+      "nombre": "UEB de Transporte",
+      "extensiones": [
+        {"extension": "28661", "cargo": "Director Transporte"},
+        {"extension": "28935", "cargo": "Area de transporte"}
+      ]
+    },
+    {
+      "nombre": "UEB Servicios Generales",
+      "extensiones": [
+        {"extension": "28926", "cargo": "Director de Servicios"},
+        {"extension": "28647", "cargo": "Comedor de la Oficina Central"},
+        {"extension": "28947", "cargo": "Comedor de la Subplanta"},
+        {"extension": "28928", "cargo": "Contabilidad Servicios Generales"}
+      ]
+    },
+    {
+      "nombre": "UEB GEE",
+      "extensiones": [
+        {"extension": "28698", "cargo": "Director GEE"},
+        {"extension": "28938", "cargo": "Generación de Emergencia"}
+      ]
+    },
+    {
+      "nombre": "ONURE",
+      "extensiones": [
+        {"extension": "28616", "cargo": "Director ONUNE"}
+      ]
+    },
+    {
+      "nombre": "UEB ATM",
+      "extensiones": [
+        {"extension": "28663", "cargo": "Director ATM"},
+        {"extension": "28638", "cargo": "Almacén Provincial"}
+      ]
+    },
+    {
+      "nombre": "UEB Inversiones",
+      "extensiones": [
+        {"extension": "28605", "cargo": "Director Inversiones"},
+        {"extension": "28685", "cargo": "Area de Inversiones"},
+        {"extension": "28932", "cargo": "Dirección de inversiones"},
+        {"extension": "28933", "cargo": "Area de inversiones 1"},
+        {"extension": "28934", "cargo": "Area de inversiones 2"}
+      ]
+    },
+    {
+      "nombre": "CIAC",
+      "extensiones": [
+        {"extension": "28725", "cargo": "Directora"},
+        {"extension": "28699", "cargo": "Marketing"},
+        {"extension": "28727", "cargo": "Grupo mesa de Control"},
+        {"extension": "28645", "cargo": "Atención a la Población"}
+      ]
+    },
+    {
+      "nombre": "Escuela de Capacitación",
+      "extensiones": [
+        {"extension": "28748", "cargo": "Escuela"}
+      ]
+    },
+    {
+      "nombre": "UEB Atención al Turismo",
+      "extensiones": [
+        {"extension": "28755", "cargo": "Director UEB"},
+        {"extension": "28756", "cargo": "Facilidad en SE110 Casco Histórico"},
+        {"extension": "28750", "cargo": "Subestación Varadero 110kv"}
+      ]
+    },
+    {
+      "nombre": "UEB Cárdenas",
+      "extensiones": [
+        {"extension": "28751", "cargo": "Subestación Cárdenas 110kv"}
+      ]
+    },
+    {
+      "nombre": "UEB BGEF Agramonte",
+      "extensiones": [
+        {"extension": "28708", "cargo": "Director BGEF Agramonte"},
+        {"extension": "28705", "cargo": "BGEF Agramonte"}
+      ]
+    },
+    {
+      "nombre": "UEB OBE Jaguey",
+      "extensiones": [
+        {"extension": "28707", "cargo": "Director OBE Jaguey"},
+        {"extension": "28664", "cargo": "Pizarra"},
+        {"extension": "28680", "cargo": "Operaciones Jaguey"},
+        {"extension": "28709", "cargo": "Economía Jaguey"}
+      ]
+    },
+    {
+      "nombre": "UEB OBE Colón",
+      "extensiones": [
+        {"extension": "28673", "cargo": "Operaciones Colón"},
+        {"extension": "28674", "cargo": "Colón.Pizarra"},
+        {"extension": "28675", "cargo": "Colón.Pizarra"},
+        {"extension": "28676", "cargo": "Colón.Pizarra"},
+        {"extension": "28682", "cargo": "Director OBE Colón"}
+      ]
+    },
+    {
+      "nombre": "UEB OBE Jovellanos",
+      "extensiones": [
+        {"extension": "28688", "cargo": "Director del OBE Jovellanos"},
+        {"extension": "28679", "cargo": "Centro Operaciones Jovellanos"},
+        {"extension": "28681", "cargo": "Oficina Jovellanos."},
+        {"extension": "28655", "cargo": "Pizarra"},
+        {"extension": "28665", "cargo": "Economía Jovellanos"}
+      ]
+    },
+    {
+      "nombre": "Subestaciones de 220 y 110kv",
+      "extensiones": [
+        {"extension": "28683", "cargo": "SE110 Guanabana"},
+        {"extension": "28704", "cargo": "SE110 Agramonte"},
+        {"extension": "28744", "cargo": "SE110 Planta Martí"},
+        {"extension": "28746", "cargo": "SE110 Naranjal"},
+        {"extension": "28747", "cargo": "SE110 Cocal"},
+        {"extension": "28750", "cargo": "SE110 Varadero"},
+        {"extension": "28751", "cargo": "SE110 Cárdenas"},
+        {"extension": "28749", "cargo": "SE220 Matanzas"}
+      ]
+    },
+    {
+      "nombre": "UEB OBE Matanzas",
+      "extensiones": [
+        {"extension": "28642", "cargo": "Director OBE Matanzas"},
+        {"extension": "28944", "cargo": "Operaciones OBE Matanzas"},
+        {"extension": "28916", "cargo": "Atención a clientes"},
+        {"extension": "28917", "cargo": "Recepción"},
+        {"extension": "28918", "cargo": "Operaciones"},
+        {"extension": "28919", "cargo": "Informática"},
+        {"extension": "28920", "cargo": "Transporte"},
+        {"extension": "28921", "cargo": "Economía"},
+        {"extension": "28922", "cargo": "Comercial"},
+        {"extension": "28923", "cargo": "Dirección"},
+        {"extension": "28924", "cargo": "Recursos Humanos"},
+        {"extension": "28925", "cargo": "Almacén"},
+        {"extension": "28946", "cargo": "Inversiones"},
+        {"extension": "28950", "cargo": "Salón Audioconferencias"}
+      ]
+    }
+  ]
+}
