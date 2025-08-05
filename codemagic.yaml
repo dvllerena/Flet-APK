@@ -3,22 +3,26 @@ workflows:
     name: Build Android APK
     environment:
       groups:
-        - keystore  # Opcional (para firmar el APK)
+        - keystore
       vars:
-        FLET_VERSION: "0.18.0"
+        FLET_VERSION: "0.28.3"  # Using latest stable Flet
+        FLUTTER_VERSION: "3.22.0"  # Specify Flutter version
     scripts:
-      - name: Instalar dependencias
+      - name: Setup Flutter
+        script: |
+          flutter channel stable
+          flutter upgrade
+          flutter --version
+      - name: Install dependencies
         script: |
           sudo apt-get update
-          sudo apt-get install -y python3-pip openjdk-11-jdk
+          sudo apt-get install -y python3-pip openjdk-17-jdk  # Updated JDK
           python3 -m pip install --upgrade pip
           python3 -m pip install flet==$FLET_VERSION
-      - name: Construir APK
+      - name: Build APK
         script: |
-          flet build apk --build-version 1.0.0 --app-name "MiAppFlet"
+          flet clean  # Clean previous builds
+          flet pack main.py --name MiAppFlet
+          flet build apk --build-version 1.0.0
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
-    publishing:
-      email:
-        recipients:
-          - dvllerena41@gmail.com # Cambia esto
