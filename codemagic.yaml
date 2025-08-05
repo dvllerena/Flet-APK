@@ -25,4 +25,4 @@ workflows:
           flet pack main.py --name MiAppFlet
           flet build apk --build-version 1.0.0
     artifacts:
-      - build/app/outputs/flutter-apk/app-release.apk
+      - build/app/outputs/flutter-apk/*.apk
