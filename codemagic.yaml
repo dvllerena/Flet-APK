@@ -3,7 +3,7 @@ workflows:
     name: Build Android APK
     environment:
       groups:
-        - $keystore  # Este grupo debe incluir las variables:
+        - keystore  # Este grupo debe incluir las variables:
                     # CM_KEYSTORE, CM_KEYSTORE_PASSWORD, CM_KEY_ALIAS, CM_KEY_PASSWORD
       vars:
         FLET_VERSION: "0.28.3"
