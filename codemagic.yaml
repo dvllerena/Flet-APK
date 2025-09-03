@@ -3,8 +3,7 @@ workflows:
     name: Build Android APK
     environment:
       groups:
-        - keystore  # Este grupo debe incluir las variables:
-                    # CM_KEYSTORE, CM_KEYSTORE_PASSWORD, CM_KEY_ALIAS, CM_KEY_PASSWORD
+        - keystore
       vars:
         FLET_VERSION: "0.28.3"
         FLUTTER_VERSION: "3.22.0"
@@ -20,20 +19,26 @@ workflows:
           sudo apt-get install -y python3-pip openjdk-17-jdk
           python3 -m pip install --upgrade pip
           python3 -m pip install flet==$FLET_VERSION
-      - name: Prepare keystore for signing
+          python3 -m pip install docxtpl pandas
+      - name: Inject Android permissions
         script: |
-          mkdir -p ~/.keystore
-          # Copia el keystore desde la ruta proporcionada por Codemagic
-          # y lo renombra a 'release.jks' para que flet lo encuentre.
-          cp "$CM_KEYSTORE_PATH" ~/.keystore/release.jks
+          MANIFEST_PATH=android/app/src/main/AndroidManifest.xml
+          if grep -q "WRITE_EXTERNAL_STORAGE" "$MANIFEST_PATH"; then
+            echo "Permisos ya presentes"
+          else
+            sed -i '/<manifest/a \
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>\n\
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>' "$MANIFEST_PATH"
+
+            sed -i '/<application/a \
+            android:requestLegacyExternalStorage="true"' "$MANIFEST_PATH"
+          fi
+
       - name: Build APK
         script: |
           flet clean
           flet pack main.py --name MiAppFlet
-          flet build apk --build-version 1.0.0 --keystore ~/.keystore/release.jks \
-            --keystore-password $CM_KEYSTORE_PASSWORD \
-            --keystore-key-alias $CM_KEY_ALIAS \
-            --key-password $CM_KEY_PASSWORD
+          flet build apk --build-version 1.0.0 
     artifacts:
       - build/app/outputs/flutter-apk/*.apk
       - build/apk/*.apk
