@@ -19,7 +19,6 @@ workflows:
           sudo apt-get install -y python3-pip openjdk-17-jdk
           python3 -m pip install --upgrade pip
           python3 -m pip install flet==$FLET_VERSION
-<<<<<<< HEAD
           python3 -m pip install docxtpl pandas
       - name: Inject Android permissions
         script: |
@@ -35,8 +34,6 @@ workflows:
             android:requestLegacyExternalStorage="true"' "$MANIFEST_PATH"
           fi
 
-=======
->>>>>>> ef4ca7abe68dad8468fb6bd4dceeaf883bfee131
       - name: Build APK
         script: |
           flet clean
