@@ -20,19 +20,6 @@ workflows:
           python3 -m pip install --upgrade pip
           python3 -m pip install flet==$FLET_VERSION
           python3 -m pip install docxtpl pandas
-      - name: Inject Android permissions
-        script: |
-          MANIFEST_PATH=android/app/src/main/AndroidManifest.xml
-          if grep -q "WRITE_EXTERNAL_STORAGE" "$MANIFEST_PATH"; then
-            echo "Permisos ya presentes"
-          else
-            sed -i '/<manifest/a \
-            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>\n\
-            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>' "$MANIFEST_PATH"
-
-            sed -i '/<application/a \
-            android:requestLegacyExternalStorage="true"' "$MANIFEST_PATH"
-          fi
 
       - name: Build APK
         script: |
